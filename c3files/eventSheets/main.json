@@ -1,0 +1,46 @@
+{
+	"name": "Main",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 129072487287838,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "customSvelte.cs.false();"
+				}
+			],
+			"sid": 238534822603271
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 784439079328270,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "customSvelte.cs.true();\ncustomSvelte.print(\"SVELTE IS TRUE\");"
+				}
+			],
+			"sid": 258282855199743
+		}
+	],
+	"sid": 558765937129534
+}

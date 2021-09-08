@@ -1,0 +1,48 @@
+{
+	"name": "Loader",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 277149338496101
+				}
+			],
+			"actions": [
+				{
+					"id": "load-stylesheet",
+					"objectClass": "Browser",
+					"sid": 877013074461728,
+					"parameters": {
+						"url": "\"svelte.css\""
+					}
+				}
+			],
+			"sid": 628021672053729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 452252556726053
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 580184073212951,
+					"parameters": {
+						"layout": "Main"
+					}
+				}
+			],
+			"sid": 449086778485477
+		}
+	],
+	"sid": 929638370091998
+}
